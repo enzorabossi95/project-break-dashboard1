@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../html/index.html" class="nav-brand">◈ ER</a>
+    <ul class="nav-links">
+      <li><a href="../html/index.html" class="active">Inicio</a></li>
+      <li><a href="../html/clock.html">Reloj</a></li>
+      <li><a href="../html/weather.html">Clima</a></li>
+      <li><a href="../html/password.html">Contraseñas</a></li>
+      <li><a href="../html/links.html">Links</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="dashboard-grid">
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Reloj Digital</span>
+          <a href="../html/clock.html" class="card-link">Ver página →</a>
+        </div>
+        <div class="clock-display">
+          <div class="clock-time">
+            <span id="clock-hours">--</span>
+            <span class="clock-sep">:</span>
+            <span id="clock-minutes">--</span>
+          </div>
+          <div class="clock-seconds">: <span id="clock-seconds">--</span></div>
+          <div class="clock-date" id="clock-date">-- / -- / ----</div>
+          <p class="clock-phrase" id="clock-phrase"></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Clima</span>
+          <a href="../html/weather.html" class="card-link">Ver página →</a>
+        </div>
+        <div class="weather-cities">
+          <div class="weather-panel" id="weather-copenhagen">
+            <p class="weather-loading">Cargando Copenhague…</p>
+          </div>
+          <div class="weather-panel" id="weather-resistencia">
+            <p class="weather-loading">Cargando Resistencia…</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Generador de Contraseñas</span>
+          <a href="../html/password.html" class="card-link">Ver página →</a>
+        </div>
+        <div class="password-controls">
+          <span class="password-label">Caracteres</span>
+          <input type="number" id="password-length" class="input input-number" value="16" min="12" max="50">
+          <button id="btn-generate" class="btn btn-primary">Generar</button>
+        </div>
+        <div class="password-result-wrap">
+          <span id="password-output" class="password-output password-placeholder">— pulsa Generar —</span>
+          <button id="btn-copy" class="btn btn-ghost">Copiar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Links</span>
+          <a href="../html/links.html" class="card-link">Ver página →</a>
+        </div>
+        <div class="links-form">
+          <input type="text" id="link-title" class="input" placeholder="Nombre del link">
+          <div class="links-form-row">
+            <input type="text" id="link-url" class="input" placeholder="https://...">
+            <button id="btn-add-link" class="btn btn-primary">+</button>
+          </div>
+        </div>
+        <div class="links-list" id="links-list"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="../js/bg.js"></script>
+  <script src="../js/clock.js"></script>
+  <script src="../js/weather.js"></script>
+  <script src="../js/password.js"></script>
+  <script src="../js/links.js"></script>
+
+</body>
+</html>

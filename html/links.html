@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links — Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">◈ ER</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="clock.html">Reloj</a></li>
+      <li><a href="weather.html">Clima</a></li>
+      <li><a href="password.html">Contraseñas</a></li>
+      <li><a href="links.html" class="active">Links</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-container">
+
+      <div class="page-heading">
+        <h1>Listado de Links</h1>
+        <p>Guarda aquí tus recursos favoritos</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Mis Links</span>
+        </div>
+
+        <div class="links-form">
+          <input
+            type="text"
+            id="link-title"
+            class="input"
+            placeholder="Nombre del link (ej: MDN Web Docs)"
+          >
+          <div class="links-form-row">
+            <input
+              type="text"
+              id="link-url"
+              class="input"
+              placeholder="URL (ej: https://developer.mozilla.org)"
+            >
+            <button id="btn-add-link" class="btn btn-primary">Añadir</button>
+          </div>
+        </div>
+
+        <div class="links-list" id="links-list"></div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/bg.js"></script>
+  <script src="../js/links.js"></script>
+
+</body>
+</html>

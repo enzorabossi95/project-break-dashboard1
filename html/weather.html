@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima — Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">◈ ER</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="clock.html">Reloj</a></li>
+      <li><a href="weather.html" class="active">Clima</a></li>
+      <li><a href="password.html">Contraseñas</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-container">
+
+      <div class="page-heading">
+        <h1>Estación Meteorológica</h1>
+        <p>Tiempo actual y de las próximas horas</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Copenhague & Resistencia</span>
+        </div>
+
+        <div class="weather-page-grid">
+          <div class="weather-panel" id="weather-copenhagen">
+            <p class="weather-loading">Cargando Copenhague…</p>
+          </div>
+          <div class="weather-panel" id="weather-resistencia">
+            <p class="weather-loading">Cargando Resistencia…</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="../js/bg.js"></script>
+  <script src="../js/weather.js"></script>
+
+</body>
+</html>
